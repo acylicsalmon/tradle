@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 function loadAllModeValues(modeName: string): Record<string, boolean> {
-  const storedModeValues = localStorage.getItem(modeName);
-  return storedModeValues != null ? JSON.parse(storedModeValues) : {};
+  const storedModeValues = localStorage.getItem(modeName)
+  return storedModeValues != null ? JSON.parse(storedModeValues) : {}
 }
 
 export function useMode(
@@ -12,18 +12,18 @@ export function useMode(
 ): [boolean, (modeValue: boolean) => void] {
   const [modeValue, setModeValue] = useState<boolean>(
     loadAllModeValues(modeName)[dayString] ?? defaultValue
-  );
+  )
 
   useEffect(() => {
-    const allModeValues = loadAllModeValues(modeName);
+    const allModeValues = loadAllModeValues(modeName)
     localStorage.setItem(
       modeName,
       JSON.stringify({
         ...allModeValues,
         [dayString]: modeValue,
       })
-    );
-  }, [dayString, modeName, modeValue]);
+    )
+  }, [dayString, modeName, modeValue])
 
-  return [modeValue, setModeValue];
+  return [modeValue, setModeValue]
 }

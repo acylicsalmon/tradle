@@ -1,13 +1,13 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import { SettingsData } from "../../hooks/useSettings";
-import { Panel } from "./Panel";
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import { SettingsData } from '../../hooks/useSettings'
+import { Panel } from './Panel'
 
 interface SettingsProps {
-  isOpen: boolean;
-  close: () => void;
-  settingsData: SettingsData;
-  updateSettings: (newSettings: Partial<SettingsData>) => void;
+  isOpen: boolean
+  close: () => void
+  settingsData: SettingsData
+  updateSettings: (newSettings: Partial<SettingsData>) => void
 }
 
 export function Settings({
@@ -16,10 +16,10 @@ export function Settings({
   settingsData,
   updateSettings,
 }: SettingsProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
-    <Panel title={t("settings.title")} isOpen={isOpen} close={close}>
+    <Panel title={t('settings.title')} isOpen={isOpen} close={close}>
       <div className="my-4">
         <div className="flex p-1">
           <select
@@ -27,7 +27,7 @@ export function Settings({
             className="h-8"
             value={settingsData.distanceUnit}
             onChange={(e) =>
-              updateSettings({ distanceUnit: e.target.value as "km" | "miles" })
+              updateSettings({ distanceUnit: e.target.value as 'km' | 'miles' })
             }
           >
             <option value="km">KM</option>
@@ -37,7 +37,7 @@ export function Settings({
             className="flex-1 ml-2 flex items-center"
             htmlFor="setting-distanceUnit"
           >
-            {t("settings.distanceUnit")}
+            {t('settings.distanceUnit')}
           </label>
         </div>
         <div className="flex p-1">
@@ -46,7 +46,7 @@ export function Settings({
             className="h-8"
             value={settingsData.theme}
             onChange={(e) =>
-              updateSettings({ theme: e.target.value as "light" | "dark" })
+              updateSettings({ theme: e.target.value as 'light' | 'dark' })
             }
           >
             <option value="light">Light</option>
@@ -56,10 +56,10 @@ export function Settings({
             className="flex-1 ml-2 flex items-center"
             htmlFor="setting-theme"
           >
-            {t("settings.theme")}
+            {t('settings.theme')}
           </label>
         </div>
       </div>
     </Panel>
-  );
+  )
 }

@@ -1,23 +1,23 @@
-import React, { forwardRef, Dispatch, SetStateAction } from "react";
+import React, { forwardRef, Dispatch, SetStateAction } from 'react'
 import {
   countries,
   fictionalCountries,
   sanitizeCountryName,
-} from "../domain/countries";
-import { Group, Text, Autocomplete } from "@mantine/core";
-import { flag } from "country-emoji";
+} from '../domain/countries'
+import { Group, Text, Autocomplete } from '@mantine/core'
+import { flag } from 'country-emoji'
 
 interface CountryInputProps {
-  setCountryValue: Dispatch<SetStateAction<string>>;
-  countryValue: string;
-  setCurrentGuess: (guess: string) => void;
-  isAprilFools: boolean;
+  setCountryValue: Dispatch<SetStateAction<string>>
+  countryValue: string
+  setCurrentGuess: (guess: string) => void
+  isAprilFools: boolean
 }
 
 interface ItemProps {
-  value: string;
-  id: string;
-  isAprilFools: boolean;
+  value: string
+  id: string
+  isAprilFools: boolean
 }
 
 const AutoCompleteItem = forwardRef<HTMLDivElement, ItemProps>(
@@ -31,8 +31,8 @@ const AutoCompleteItem = forwardRef<HTMLDivElement, ItemProps>(
       </Group>
     </div>
   )
-);
-AutoCompleteItem.displayName = "Autocomplete Item";
+)
+AutoCompleteItem.displayName = 'Autocomplete Item'
 const AutoCompleteItemAprilFools = forwardRef<HTMLDivElement, ItemProps>(
   ({ id, value, isAprilFools = false, ...others }: ItemProps, ref) => (
     <div ref={ref} {...others}>
@@ -43,8 +43,8 @@ const AutoCompleteItemAprilFools = forwardRef<HTMLDivElement, ItemProps>(
       </Group>
     </div>
   )
-);
-AutoCompleteItemAprilFools.displayName = "Autocomplete Item April Fools";
+)
+AutoCompleteItemAprilFools.displayName = 'Autocomplete Item April Fools'
 
 export function CountryInput({
   countryValue,
@@ -62,7 +62,7 @@ export function CountryInput({
         name: country.name,
         value: `${country.name}`,
         id: country.code,
-      }));
+      }))
   return (
     <Autocomplete
       autoComplete="noautocompleteplzz"
@@ -75,16 +75,16 @@ export function CountryInput({
       filter={(value, item) =>
         item.value
           .toLowerCase()
-          .normalize("NFD")
-          .replace(/\p{Diacritic}/gu, "")
+          .normalize('NFD')
+          .replace(/\p{Diacritic}/gu, '')
           .includes(value.toLowerCase().trim()) ||
         item.id.toLowerCase().includes(value.toLowerCase().trim())
       }
       onItemSubmit={(item) => {
-        setCurrentGuess(sanitizeCountryName(item.value));
+        setCurrentGuess(sanitizeCountryName(item.value))
       }}
       value={countryValue}
       onChange={setCountryValue}
     />
-  );
+  )
 }

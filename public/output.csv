@@ -1,4 +1,4 @@
-percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.description
+percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,product_description
 3.92033,0.00341,1149,AFG,Afghanistan,"Figs, dried"
 5.18481,0.00525,987,AFG,Afghanistan,"Natural gums, resins, balsam and lacs"
 5.61527,0.01065,527,AFG,Afghanistan,"Grapes, dried (raisins)"
@@ -132,7 +132,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 1.01592,0.00518,196,BGD,Bangladesh,Flax or ramie yarn not put up for retail sale
 0.26577,0.00145,183,BGD,Bangladesh,Jute & waste
 0.17321,0.00122,142,BGD,Bangladesh,"Jute fabrics, woven"
-5.56203,0.09733,57,BGD,Bangladesh,"Men’s/boy’s under garments, not knitted/crochet."
+5.56203,0.09733,57,BGD,Bangladesh,"Menï¿½s/boyï¿½s under garments, not knitted/crochet."
 0.17938,0.00344,52,BGD,Bangladesh,"Used or new rags, scrap cordage or worm out art."
 20.56362,0.40582,51,BGD,Bangladesh,"Under garments knitted, not elast. Nor rubberd"
 17.97603,0.39523,45,BGD,Bangladesh,"Mens and boys outer garments, not knitted"
@@ -321,7 +321,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 0.55095,0.03631,15,BLR,Belarus,Mechanically propelled railway and tramway cars
 1.08389,0.00766,142,KHM,Cambodia,"Fur skins, tanned or dressed"
 1.2997,0.01392,93,KHM,Cambodia,"Roots & tubers, fresh or dried, sago pith"
-0.26667,0.0066,40,KHM,Cambodia,"Women’s/inf. under garments, not knitted/crochet."
+0.26667,0.0066,40,KHM,Cambodia,"Womenï¿½s/inf. under garments, not knitted/crochet."
 1.47819,0.04514,33,KHM,Cambodia,"Cycles, not motorized"
 0.09685,0.00301,32,KHM,Cambodia,Textile fabrics coated with gum or amylaceous
 25.23353,0.79109,32,KHM,Cambodia,"Outer garments knitted, not elast. Nor rubberd"
@@ -385,7 +385,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 0.23653,0.00187,126,LKA,Sri Lanka,"Cloves (whole fruit, cloves & stems)"
 2.79867,0.02619,107,LKA,Sri Lanka,"Gloves, etc. knitted crocheted, not elastic"
 0.03683,0.00035,104,LKA,Sri Lanka,"Copra, ex. flour and meal"
-0.54253,0.0066,82,LKA,Sri Lanka,"Women’s/inf. under garments, not knitted/crochet."
+0.54253,0.0066,82,LKA,Sri Lanka,"Womenï¿½s/inf. under garments, not knitted/crochet."
 4.97342,0.06282,79,LKA,Sri Lanka,"Corsets, suspenders, gartes & similar articles"
 0.88683,0.01512,59,LKA,Sri Lanka,Activated carbon & actv. nat. mineral products
 0.61285,0.01154,53,LKA,Sri Lanka,"Other materials of vegetable origin, n.e.s."
@@ -435,7 +435,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 0.06445,0.00261,25,CCK,Cocos Islands,Percussion musical instruments
 0.55813,0.02484,22,CCK,Cocos Islands,"Anim./veget. oils, boiled, oxidized, dehydrated"
 0.77723,0.03574,22,CCK,Cocos Islands,Gas or liquid supply meters
-0.17551,0.00819,21,CCK,Cocos Islands,Children’s picture & painting books
+0.17551,0.00819,21,CCK,Cocos Islands,Childrenï¿½s picture & painting books
 0.0325,0.00159,20,CCK,Cocos Islands,Waste & scrap of unhardened rubber
 0.48114,0.0261,18,CCK,Cocos Islands,"Shawls, scarves, etc. Not knitted or crocheted"
 3.798,0.2176,17,CCK,Cocos Islands,"Pocket watches, wrist watches & other watches"
@@ -624,7 +624,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 0.03459,0.00187,18,ERI,Eritrea,"Cloves (whole fruit, cloves & stems)"
 0.18368,0.02076,9,ERI,Eritrea,"Pepper & pimento, whether or not ground"
 35.45717,5.81302,6,ERI,Eritrea,NA
-0.37003,0.09733,4,ERI,Eritrea,"Men’s/boy’s under garments, not knitted/crochet."
+0.37003,0.09733,4,ERI,Eritrea,"Menï¿½s/boyï¿½s under garments, not knitted/crochet."
 0.21614,0.08983,2,ERI,Eritrea,"Crustacean & molluscs, prepared or preserved"
 0.01885,0.01265,1,ERI,Eritrea,Other dried fruit
 0.00223,0.00223,1,ERI,Eritrea,"Cotton waste, not carded or combed"
@@ -865,7 +865,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 29.94267,0.79109,38,HTI,Haiti,"Outer garments knitted, not elast. Nor rubberd"
 0.10102,0.00325,31,HTI,Haiti,Leather of goat and kid skins
 0.3666,0.01546,24,HTI,Haiti,"Wigs, false beards, switches, etc."
-2.20248,0.09733,23,HTI,Haiti,"Men’s/boy’s under garments, not knitted/crochet."
+2.20248,0.09733,23,HTI,Haiti,"Menï¿½s/boyï¿½s under garments, not knitted/crochet."
 0.06306,0.0035,18,HTI,Haiti,"Human hair, dressed or otherwise worked, etc."
 0.54515,0.03128,17,HTI,Haiti,"Headgear, knitted/crocheted of textile, no felt"
 0.6894,0.05089,14,HTI,Haiti,"Cocoa beans, raw or roasted"
@@ -1236,7 +1236,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 0.60547,0.00665,91,MUS,Mauritius,Vanilla
 0.81818,0.01104,74,MUS,Mauritius,Art .incorporating pearls of semi & precious st.
 4.10159,0.05735,72,MUS,Mauritius,"Refined sugar & other prod. of refining, no syrup"
-5.16909,0.09733,53,MUS,Mauritius,"Men’s/boy’s under garments, not knitted/crochet."
+5.16909,0.09733,53,MUS,Mauritius,"Menï¿½s/boyï¿½s under garments, not knitted/crochet."
 3.13467,0.06697,47,MUS,Mauritius,"Raw sugar, beet & cane"
 0.00844,0.00019,45,MUS,Mauritius,True hemp and true hemp tow and waste
 0.75647,0.03747,20,MEX,Mexico,Railway and tramway goods wagons /freight cars/
@@ -1448,7 +1448,7 @@ percent_share,expected_share,RCA,iso_3digit_alpha,country_name_full,Product.desc
 9.20091,0.28427,32,NIC,Nicaragua,"Meat of bovine animals, fresh, chilled or frozen"
 1.95104,0.06697,29,NIC,Nicaragua,"Raw sugar, beet & cane"
 1.4325,0.05487,26,NIC,Nicaragua,"Beans, peas, lentils & leguminous vegetable. dried"
-2.35448,0.09733,24,NIC,Nicaragua,"Men’s/boy’s under garments, not knitted/crochet."
+2.35448,0.09733,24,NIC,Nicaragua,"Menï¿½s/boyï¿½s under garments, not knitted/crochet."
 15.65085,0.00651,2403,NER,Niger,Ores & concentrates of uranium & thorium
 15.10714,0.10504,144,NER,Niger,"Oil seeds, oil nuts & oil kernels, n.e.s."
 4.12122,0.05977,69,NER,Niger,Radioactive chem. elements & isotopes/comp. & mix.

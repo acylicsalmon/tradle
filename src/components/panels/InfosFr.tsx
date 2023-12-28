@@ -1,14 +1,14 @@
-import { Guesses } from "../Guesses";
-import { Panel } from "./Panel";
-import React from "react";
-import { Tradele } from "../Tradele";
-import { formatDistance } from "../../domain/geography";
-import { SettingsData } from "../../hooks/useSettings";
+import { Guesses } from '../Guesses'
+import { Panel } from './Panel'
+import React from 'react'
+import { Tradele } from '../Tradele'
+import { formatDistance } from '../../domain/geography'
+import { SettingsData } from '../../hooks/useSettings'
 
 interface InfosProps {
-  isOpen: boolean;
-  close: () => void;
-  settingsData: SettingsData;
+  isOpen: boolean
+  close: () => void
+  settingsData: SettingsData
 }
 
 export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
@@ -16,7 +16,7 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
     <Panel title="Comment jouer" isOpen={isOpen} close={close}>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
         <div>
-          {" "}
+          {' '}
           Devine le <Tradele /> en 6 essais.
         </div>
         <div>Chaque essai doit être un pays, un territoire, etc... valide.</div>
@@ -32,15 +32,15 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
             rowCount={1}
             guesses={[
               {
-                name: "Chili",
-                direction: "NE",
+                name: 'Chili',
+                direction: 'NE',
                 distance: 13_557_000,
               },
             ]}
             settingsData={settingsData}
           />
           <div className="my-2">
-            Votre essai <span className="uppercase font-bold">Chili</span> est à{" "}
+            Votre essai <span className="uppercase font-bold">Chili</span> est à{' '}
             {formatDistance(13_557_000, settingsData.distanceUnit)} du pays
             cible, le pays cible se trouve dans la direction Nord-Est et vous
             avez une proximité de seulement 32% car votre essai est plutôt
@@ -52,17 +52,17 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
             rowCount={1}
             guesses={[
               {
-                name: "Finlande",
-                direction: "SE",
+                name: 'Finlande',
+                direction: 'SE',
                 distance: 3_206_000,
               },
             ]}
             settingsData={settingsData}
           />
           <div className="my-2">
-            Votre seconde essai{" "}
+            Votre seconde essai{' '}
             <span className="uppercase font-bold">Finlande</span> est plus
-            proche ! La bonne réponse est à{" "}
+            proche ! La bonne réponse est à{' '}
             {formatDistance(3_206_000, settingsData.distanceUnit)}, au Sud-Est
             et la proximité est de 84%!
           </div>
@@ -72,8 +72,8 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
             rowCount={1}
             guesses={[
               {
-                name: "Liban",
-                direction: "N",
+                name: 'Liban',
+                direction: 'N',
                 distance: 0,
               },
             ]}
@@ -96,13 +96,13 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
         </div>
         <div>
           Par exemple, la distance calculée entre les Etats-Unis et le Canada
-          est d&apos;environs{" "}
+          est d&apos;environs{' '}
           {formatDistance(2_260_000, settingsData.distanceUnit)} même si les
           deux pays ont une frontière commune.
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Tradele /> a été <span className="font-bold">très</span> inspiré par{" "}
+        <Tradele /> a été <span className="font-bold">très</span> inspiré par{' '}
         <a
           className="underline"
           href="https://www.powerlanguage.co.uk/wordle/"
@@ -110,8 +110,8 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
           rel="noopener noreferrer"
         >
           Wordle
-        </a>{" "}
-        créé par{" "}
+        </a>{' '}
+        créé par{' '}
         <a
           className="underline"
           href="https://twitter.com/powerlanguish"
@@ -124,7 +124,7 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
       </div>
       <div className="space-y-3 text-justify pb-3">
         <div>
-          Fait par{" "}
+          Fait par{' '}
           <a
             className="underline"
             href="https://twitter.com/ximoes"
@@ -136,5 +136,5 @@ export function InfosFr({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
     </Panel>
-  );
+  )
 }

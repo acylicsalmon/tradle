@@ -1,14 +1,14 @@
-import { Guess } from "../domain/guess";
-import { GuessRow } from "./GuessRow";
-import React from "react";
-import { SettingsData } from "../hooks/useSettings";
+import { Guess } from '../domain/guess'
+import { GuessRow } from './GuessRow'
+import React from 'react'
+import { SettingsData } from '../hooks/useSettings'
 
 interface GuessesProps {
-  rowCount: number;
-  guesses: Guess[];
-  settingsData: SettingsData;
-  countryInputRef?: React.RefObject<HTMLInputElement>;
-  isAprilFools?: boolean;
+  rowCount: number
+  guesses: Guess[]
+  settingsData: SettingsData
+  countryInputRef?: React.RefObject<HTMLInputElement>
+  isAprilFools?: boolean
 }
 
 export function Guesses({
@@ -33,5 +33,5 @@ export function Guesses({
         ))}
       </div>
     </div>
-  );
+  )
 }

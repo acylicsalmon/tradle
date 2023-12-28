@@ -1,19 +1,19 @@
-import Modal from "react-modal";
-import React, { useEffect, useState } from "react";
-import { getStatsData } from "../../domain/stats";
+import Modal from 'react-modal'
+import React, { useEffect, useState } from 'react'
+import { getStatsData } from '../../domain/stats'
 
 interface PanelProps {
-  title: string;
-  isOpen: boolean;
-  close: () => void;
-  children?: React.ReactNode;
+  title: string
+  isOpen: boolean
+  close: () => void
+  children?: React.ReactNode
 }
 
 export function Panel({ title, isOpen, close, children }: PanelProps) {
-  const [debug, setDebug] = useState(0);
+  const [debug, setDebug] = useState(0)
   useEffect(() => {
-    setDebug(0);
-  }, [isOpen]);
+    setDebug(0)
+  }, [isOpen])
 
   return (
     <Modal
@@ -39,5 +39,5 @@ export function Panel({ title, isOpen, close, children }: PanelProps) {
         {debug >= 5 && <div>!!!{JSON.stringify(getStatsData())}</div>}
       </div>
     </Modal>
-  );
+  )
 }

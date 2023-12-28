@@ -1,7 +1,5 @@
 {
-  "i18n-ally.localesPaths": [
-    "src"
-  ],
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "i18n-ally.localesPaths": ["src"],
+  "editor.formatOnSave": false, // Disable formatting on save
+  "editor.defaultFormatter": null // Set default formatter to null or another formatter if desired
 }

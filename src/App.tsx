@@ -1,30 +1,30 @@
-import { ToastContainer, Flip } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { Game } from "./components/Game";
-import React, { useEffect, useState } from "react";
-import { Infos } from "./components/panels/Infos";
-import { useTranslation } from "react-i18next";
-import { InfosFr } from "./components/panels/InfosFr";
-import { Settings } from "./components/panels/Settings";
-import { useSettings } from "./hooks/useSettings";
-import { Stats } from "./components/panels/Stats";
+import { ToastContainer, Flip } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { Game } from './components/Game'
+import React, { useEffect, useState } from 'react'
+import { Infos } from './components/panels/Infos'
+import { useTranslation } from 'react-i18next'
+import { InfosFr } from './components/panels/InfosFr'
+import { Settings } from './components/panels/Settings'
+import { useSettings } from './hooks/useSettings'
+import { Stats } from './components/panels/Stats'
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
-  const [infoOpen, setInfoOpen] = useState(false);
-  const [settingsOpen, setSettingsOpen] = useState(false);
-  const [statsOpen, setStatsOpen] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false)
+  const [settingsOpen, setSettingsOpen] = useState(false)
+  const [statsOpen, setStatsOpen] = useState(false)
 
-  const [settingsData, updateSettings] = useSettings();
+  const [settingsData, updateSettings] = useSettings()
 
   useEffect(() => {
-    if (settingsData.theme === "dark") {
-      document.documentElement.classList.add("dark");
+    if (settingsData.theme === 'dark') {
+      document.documentElement.classList.add('dark')
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove('dark')
     }
-  }, [settingsData.theme]);
+  }, [settingsData.theme])
 
   return (
     <>
@@ -39,7 +39,7 @@ function App() {
         autoClose={5000}
         bodyClassName="font-bold text-center"
       />
-      {i18n.resolvedLanguage === "fr" ? (
+      {i18n.resolvedLanguage === 'fr' ? (
         <InfosFr
           isOpen={infoOpen}
           close={() => setInfoOpen(false)}
@@ -67,7 +67,7 @@ function App() {
         className="flex justify-center flex-auto relative"
         // style={{ background: "linear-gradient(#2c5363,#0f2027)" }}
       >
-        <div className="w-full max-w-lg flex flex-col relative z-10 bg-white bg-opacity-75 md:bg-transparent">
+        <div className="w-full max-w-4xl flex flex-col relative z-10 bg-white bg-opacity-75 md:bg-transparent">
           <header className="border-b-2 px-3 border-gray-200 flex justify-between">
             <button
               className="mr-3 text-xl"
@@ -146,7 +146,7 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
