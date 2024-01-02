@@ -100,7 +100,7 @@ const HorizontalBarChart = ({ countryCode }) => {
             // const label = context?.dataset?.label;
             const product = context?.dataset?.tooltip?.[context?.dataIndex];
 
-            return `(RCA: ${product?.RCA}%, Share: ${product?.percent_share}%, Expected Share: ${product?.expected_share}%)`;
+            return `(RCA: ${product?.RCA}, Share: ${product?.percent_share}%, Expected Share: ${product?.expected_share}%)`;
           },
         },
       },
